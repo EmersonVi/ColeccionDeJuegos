@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="V0j-Ar-Na9">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="V0j-Ar-Na9">
+                                <rect key="frame" x="0.0" y="101" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -33,7 +33,7 @@
                     <navigationItem key="navigationItem" id="AWp-je-vNx">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="pjq-bH-dYN">
                             <connections>
-                                <segue destination="4g1-8F-egr" kind="show" id="SQS-Sx-oyv"/>
+                                <segue destination="4g1-8F-egr" kind="show" identifier="juegoSegue" id="SQS-Sx-oyv"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -73,14 +73,24 @@
                                     <action selector="agregarTapped:" destination="4g1-8F-egr" eventType="touchUpInside" id="RBp-ZI-Cbg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOt-3s-jr0">
+                                <rect key="frame" x="169" y="390" width="76" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Eliminar"/>
+                                <connections>
+                                    <action selector="eliminarTapped:" destination="4g1-8F-egr" eventType="touchUpInside" id="Qoi-6u-7Cp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dAQ-QV-6L7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="EzR-Jn-dMd" firstAttribute="centerX" secondItem="4Qc-vl-8WG" secondAttribute="centerX" id="00B-2U-tzK"/>
                             <constraint firstItem="EzR-Jn-dMd" firstAttribute="top" secondItem="kb4-Pd-E3W" secondAttribute="bottom" constant="20" id="8ev-qV-hQ6"/>
+                            <constraint firstItem="hOt-3s-jr0" firstAttribute="centerX" secondItem="4Qc-vl-8WG" secondAttribute="centerX" id="F7b-zU-YLA"/>
                             <constraint firstItem="HJo-tl-XyQ" firstAttribute="centerX" secondItem="4Qc-vl-8WG" secondAttribute="centerX" id="Pkm-Re-hTg"/>
                             <constraint firstItem="HJo-tl-XyQ" firstAttribute="top" secondItem="EzR-Jn-dMd" secondAttribute="bottom" constant="20" id="bXP-zN-ps8"/>
+                            <constraint firstItem="hOt-3s-jr0" firstAttribute="top" secondItem="HJo-tl-XyQ" secondAttribute="bottom" constant="15" id="hez-jw-KDJ"/>
                             <constraint firstItem="kb4-Pd-E3W" firstAttribute="centerX" secondItem="4Qc-vl-8WG" secondAttribute="centerX" id="jg4-x4-v70"/>
                             <constraint firstItem="kb4-Pd-E3W" firstAttribute="top" secondItem="dAQ-QV-6L7" secondAttribute="top" constant="32" id="qHT-Xh-S4N"/>
                             <constraint firstItem="EzR-Jn-dMd" firstAttribute="width" secondItem="kb4-Pd-E3W" secondAttribute="width" id="zIR-YX-xH6"/>
@@ -102,12 +112,14 @@
                     </navigationItem>
                     <connections>
                         <outlet property="JuegoImageView" destination="kb4-Pd-E3W" id="lYs-NY-LNd"/>
+                        <outlet property="agregarActualizarBoton" destination="HJo-tl-XyQ" id="Tfz-FG-TnP"/>
+                        <outlet property="eliminarBoton" destination="hOt-3s-jr0" id="Utv-sC-0Xr"/>
                         <outlet property="tituloTextField" destination="EzR-Jn-dMd" id="fuL-nS-KeM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r6W-Sy-Bud" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1671" y="91"/>
+            <point key="canvasLocation" x="1669.5652173913045" y="90.401785714285708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PTj-bu-tVS">
