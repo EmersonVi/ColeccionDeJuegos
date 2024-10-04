@@ -14,6 +14,7 @@
 		E9EE0E562CB0603700760798 /* YagunoColeccionDeJuegos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9EE0E542CB0603700760798 /* YagunoColeccionDeJuegos.xcdatamodeld */; };
 		E9EE0E582CB0603A00760798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9EE0E572CB0603A00760798 /* Assets.xcassets */; };
 		E9EE0E5B2CB0603A00760798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9EE0E592CB0603A00760798 /* LaunchScreen.storyboard */; };
+		E9EE0E632CB0628800760798 /* JuegosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EE0E622CB0628800760798 /* JuegosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E9EE0E572CB0603A00760798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9EE0E5A2CB0603A00760798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9EE0E5C2CB0603A00760798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9EE0E622CB0628800760798 /* JuegosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				E9EE0E4D2CB0603700760798 /* SceneDelegate.swift */,
 				E9EE0E4F2CB0603700760798 /* ViewController.swift */,
 				E9EE0E512CB0603700760798 /* Main.storyboard */,
+				E9EE0E622CB0628800760798 /* JuegosViewController.swift */,
 				E9EE0E572CB0603A00760798 /* Assets.xcassets */,
 				E9EE0E592CB0603A00760798 /* LaunchScreen.storyboard */,
 				E9EE0E5C2CB0603A00760798 /* Info.plist */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9EE0E632CB0628800760798 /* JuegosViewController.swift in Sources */,
 				E9EE0E562CB0603700760798 /* YagunoColeccionDeJuegos.xcdatamodeld in Sources */,
 				E9EE0E502CB0603700760798 /* ViewController.swift in Sources */,
 				E9EE0E4C2CB0603700760798 /* AppDelegate.swift in Sources */,
